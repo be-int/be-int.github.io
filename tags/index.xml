@@ -8,20 +8,29 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Nov 2022 11:00:26 +0100</lastBuildDate><atom:link href="https://be-int.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>intro</title>
-      <link>https://be-int.github.io/tags/intro/</link>
+      <title>GitHub</title>
+      <link>https://be-int.github.io/tags/github/</link>
       <pubDate>Sun, 06 Nov 2022 11:00:26 +0100</pubDate>
       
-      <guid>https://be-int.github.io/tags/intro/</guid>
+      <guid>https://be-int.github.io/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>start</title>
-      <link>https://be-int.github.io/tags/start/</link>
+      <title>Hugo</title>
+      <link>https://be-int.github.io/tags/hugo/</link>
       <pubDate>Sun, 06 Nov 2022 11:00:26 +0100</pubDate>
       
-      <guid>https://be-int.github.io/tags/start/</guid>
+      <guid>https://be-int.github.io/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MacOS</title>
+      <link>https://be-int.github.io/tags/macos/</link>
+      <pubDate>Sun, 06 Nov 2022 11:00:26 +0100</pubDate>
+      
+      <guid>https://be-int.github.io/tags/macos/</guid>
       <description></description>
     </item>
     
