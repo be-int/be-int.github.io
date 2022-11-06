@@ -8,7 +8,7 @@ cover:
     alt: https://gohugo.io/
 ---
 
-Ce site utilise Hugo (PaperMod) & GitHuB (Pages). Ci-dessous le tuto pour sa mise en place.
+Ce présent site utilise Hugo (thème PaperMod) & GitHuB (Pages). Ci-dessous le tuto pour sa mise en place.
 
 ## Prérequis : installation de HomeBrew
 
@@ -103,3 +103,91 @@ outputs:
 ```
 ctrl + o pour sauver  
 ctrl + x pour quitter
+
+## Github Push :
+
+```
+git add .
+git status
+git commit -m "Commit initial"
+git push origin setup-my-blog
+```
+
+Sur votre repo -> Compare & pull request -> Create pull request -> Merge pull request -> Confirm merge
+
+```
+git checkout main
+git pull
+```
+
+## Deployement automatique de votre site
+
+```
+git checkout -b site_deploy
+mkdir -p .github/workflows
+touch .github/workflows/sd.yml
+```
+Editer le fichier sd.yml :
+```
+nano .github/workflows/sd.yml
+```
+Collez-y ce code pour déployer automatiquement votre site :
+```
+name: Build and Deploy Site
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
+      - name: Build site with Hugo
+        run: hugo --minify
+
+      - name: Check HTML
+        uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
+          arguments: --only-4xx --check-favicon --check-html --assume-extension --empty-alt-ignore --disable-external
+        continue-on-error: true
+
+      - name: Deploy to GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+```
+```
+git add .github/workflows/sd.yml
+git commit -m "Deployement automatique du site"
+git push origin site_deploy
+```
+Sur votre repo -> Compare & pull request -> Create pull request -> Merge pull request -> Confirm merge
+
+Dans les settings de votre repo -> Pages :
+Select gh-pages & /(root) -> cliquez sur Save
+
+Après une minute, vous pouvez aller consulter votre site sur : https://VotreUserGithub.github.io
+
+```
+git checkout main
+git pull
+```
