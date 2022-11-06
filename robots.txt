@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://be-int.github.io/sitemap.xml

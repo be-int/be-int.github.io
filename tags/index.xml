@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on BEiNT</title>
+    <link>https://be-int.github.io/tags/</link>
+    <description>Recent content in Tags on BEiNT</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Nov 2022 11:00:26 +0100</lastBuildDate><atom:link href="https://be-int.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>intro</title>
+      <link>https://be-int.github.io/tags/intro/</link>
+      <pubDate>Sun, 06 Nov 2022 11:00:26 +0100</pubDate>
+      
+      <guid>https://be-int.github.io/tags/intro/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>start</title>
+      <link>https://be-int.github.io/tags/start/</link>
+      <pubDate>Sun, 06 Nov 2022 11:00:26 +0100</pubDate>
+      
+      <guid>https://be-int.github.io/tags/start/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
