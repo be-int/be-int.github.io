@@ -1,0 +1,56 @@
+baseURL: "https://be-int.github.io/"
+languageCode: "en-us"
+title: "BEiNT"
+
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  defaultTheme: light
+
+  cover:
+    linkFullImages: true
+
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+  ShowReadingTime: true
+
+  assets:
+    favicon: "favicon.ico"
+
+menu:
+  main:
+    - identifier: archives
+      name: Archives
+      url: archives/
+      weight: 15
+    - identifier: tags
+      name: '#'
+      url: tags/
+      weight: 15
+    - identifier: search
+      name: Search
+      url: search/
+      weight: 15
+    
+    
+      
+
+
+outputs:
+    home:
+        - HTML
+        - RSS
+        - JSON
+
+
+
