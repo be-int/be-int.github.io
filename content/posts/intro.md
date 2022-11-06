@@ -191,3 +191,6 @@ Après une minute, vous pouvez aller consulter votre site sur : https://VotreUse
 git checkout main
 git pull
 ```
+
+### Bonus
+Markdown & YAML cheat sheet : https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/
