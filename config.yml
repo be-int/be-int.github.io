@@ -14,7 +14,7 @@ minify:
   minifyOutput: true
 
 params:
-  defaultTheme: light
+  defaultTheme: dark
 
   cover:
     linkFullImages: true
