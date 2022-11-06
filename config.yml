@@ -32,20 +32,16 @@ menu:
     - identifier: archives
       name: Archives
       url: archives/
-      weight: 15
+      weight: 2
     - identifier: tags
       name: '#'
       url: tags/
-      weight: 15
+      weight: 3
     - identifier: search
       name: Search
       url: search/
-      weight: 15
-    
-    
-      
-
-
+      weight: 1
+  
 outputs:
     home:
         - HTML
