@@ -192,5 +192,27 @@ git checkout main
 git pull
 ```
 
+### Update
+
+Création d'une nouvelle branche pour ajouter du contenu
+```
+git checkout -b add_content
+```
+
+Effectuez vos modifications, ensuite push & merge
+
+```
+git add .
+git commit -m "Ajout de contenu"
+git push origin add_content
+```
+
+Sur votre repo -> Compare & pull request -> Create pull request -> Merge pull request -> Confirm merge
+
+```
+git checkout main
+git pull
+```
+
 ### Bonus
 Markdown & YAML cheat sheet : https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/
